@@ -15,6 +15,7 @@
         fetch('https://jsonplaceholder.typicode.com/users')
   .then(response => response.json())
   .then(json => displayUser(json))
+  .catch(error=>console.log(error))
 
   function displayUser(users){
      // console.log("users",users);
@@ -30,5 +31,10 @@
      }
   }
     </script>
+    <!-- Some important http status codes are:
+    200: The one you will mostly want to get. Succesful transfer
+    301: Moved Permanently. 300 defines Redirections
+    404: Not found. 400: bad requests as 401 Unauthorized and 403 Forbidden.
+    502: Bad Gateway. 500 defines Internal Server Errors. -->
 </body>
 </html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+    <h1>JSON</h1>
+    <h2>Java script objectiv notatent</h2>
+    <script>
+        const user={id:245,
+            name:"masud",
+            lover:{name:"jamila",
+        favFood:"pizza"},
+            friendsAge:[12,45,56],
+        friend:["jamal","kamal"] };
+        //{"id":245,"name":"masud"}
+        const userJSON=JSON.stringify(user);
+        console.log(userJSON);
+        const userFromJSONE=JSON.parse(userJSON);
+        console.log(userFromJSONE);
+    </script>
+</body>
+</html>
